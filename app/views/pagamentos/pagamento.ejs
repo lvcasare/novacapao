@@ -102,10 +102,11 @@
                 <% } else {%> 
                   <a class="btn btn-warning" href="/pagamento/upload?id=<%= pagamentos[i].id%>&pedidoid=<%= pagamentos[i].pedidoid%>"> Enviar</a>
                 <% }%>
-                
-              
-            
             </td>
+            <td class="text-center">
+              <a class="btn btn-danger" href="/pagdel?id=<%= pagamentos[i].id%>&total=<%= get.total%>&pedidoid=<%= get.id%>"> Excluir</a>
+                             
+              </td> 
                 
             </tr>
             <%}%>
